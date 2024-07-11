@@ -1,4 +1,4 @@
-# Rtools installation and loading
+# Rtools installation
 if (!require("installr"))
   install.packages("installr")
 library(installr)
@@ -9,21 +9,21 @@ installr::install.Rtools()
 #    install.packages("installr")
 # installr::install.CMake()
 
-# devtools installation and loading alongside usethis
+# devtools installation alongside usethis
 if (!require(devtools))
   install.packages("devtools")
 library(devtools)
 library(usethis)
 
-# ROpenCVLite installation and loading
+# ROpenCVLite installation
 install.packages("ROpenCVLite")
 library(ROpenCVLite)
 
-# opencv installation and loading
+# opencv installation 
 install.packages("opencv")
 library(opencv)
 
-# Rvision installation from github and loading
+# Rvision installation from github
 devtools::install_github("swarm-lab/Rvision")
 library(Rvision)
 
