@@ -1,4 +1,4 @@
-# Rtools installation
+# Rtools installation and loading
 if (!require("installr"))
   install.packages("installr")
 library(installr)
@@ -9,22 +9,21 @@ installr::install.Rtools()
 #    install.packages("installr")
 # installr::install.CMake()
 
-# First lets install devtools so we can install Rvision
+# devtools installation and loading alongside usethis
 if (!require(devtools))
   install.packages("devtools")
 library(devtools)
 library(usethis)
 
-# ROpenCVLite installation
+# ROpenCVLite installation and loading
 install.packages("ROpenCVLite")
 library(ROpenCVLite)
-devtools::install_github("swarm-lab/ROpenCVLite")
 
-# installing openCV
+# opencv installation and loading
 install.packages("opencv")
 library(opencv)
 
-# installing and loading Rvision from github 
+# Rvision installation from github and loading
 devtools::install_github("swarm-lab/Rvision")
 library(Rvision)
 
@@ -43,5 +42,5 @@ while(TRUE){
 ## ocv_video(ocv_face)
 ## ocv_video(ocv_edges)
 
-# when done
+# when done end program execution or...
 # release(vid_stream)
