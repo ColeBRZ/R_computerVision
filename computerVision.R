@@ -4,7 +4,7 @@ if (!require("installr"))
 library(installr)
 installr::install.Rtools()
 
-# CMake installation (may or may not be necessary)
+# CMake installation (may or may not be necessary, read README)
 # if (!require("installr"))
 #    install.packages("installr")
 # installr::install.CMake()
