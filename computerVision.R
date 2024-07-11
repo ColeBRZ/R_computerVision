@@ -1,4 +1,3 @@
-
 # Rtools installation
 if (!require("installr"))
   install.packages("installr")
