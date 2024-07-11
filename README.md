@@ -10,6 +10,7 @@ After Rtools is installed, make sure it is able to be found in your environment 
 it will look like this...
 
 Variable               Value
+
 RTOOLS43_HOME          C:\rtools43
 
 Installing Cmake is only required if your R version starts with 4.0 or 4.1 and, 
